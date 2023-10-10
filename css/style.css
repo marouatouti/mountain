@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  list-style: none;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+header {
+  position: fixed;
+  width: 100%;
+  height: 64px;
+  background-color: #d3d9e7ae;
+}
+ul {
+  width: 100%;
+  height: 64px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+#accueil {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  gap: 10px;
+}
+#accueil2 {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  gap: 10px;
+}
+.fond {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+  filter: brightness(0.4);
+}
+.fond2 {
+  width: 100%;
+  top: 0;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+  filter: brightness(0.4);
+  height: 90%;
+}
+.logo {
+  width: 50%;
+  margin-top: 30vh;
+}
+#accueil h1,
+#accueil2 h1 {
+  font-size: 110px;
+  font-weight: 400;
+  font-family: "anton", Helvetica, sans-serif;
+}
+
+
+#accueil button,
+#accueil2 button {
+  height: 40px;
+  background-color: transparent;
+  border: solid 1px white;
+  color: white;
+  margin: 20px;
+  cursor: pointer;
+  padding: 0 50px;
+}
+#accueil button:hover,
+#accueil2 button:hover {
+  background-color: rgba(255, 255, 255, 0.701);
+  border: solid 1px rgba(255, 255, 255, 0.701);
+  color: rgb(1, 94, 73);
+  transition: 0.5s;
+}
+#reservation {
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+  height: 95vh;
+  width: 100%;
+}
+#reservation h2,
+#avis h2,
+#contact h2,
+#detail h2 {
+  font-size: 40px;
+  text-align: center;
+  margin: 45px 30px 30px 30px;
+  font-weight: bold;
+}
+h2::after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 3px;
+    background-color: #015E49;
+    margin: 12px auto;
+}
+
+h3::after {
+content: "";
+display: block;
+width: 50px;
+height: 3px;
+background-color: #015E49;
+margin: 8px auto;
+}
+.reservation {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.reservation img {
+  width: 100%;
+  margin-bottom: -33px;
+}
+.reservation h3 {
+  text-transform: uppercase;
+  margin-top: 15px;
+  font-size: 25px;
+}
+.destination {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 26%;
+  border: solid 1px black;
+  gap: 10px;
+}
+.destination button {
+  height: 48px;
+  width: 150px;
+  border-radius: 25px;
+  background-color: #015e49;
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-size: 18px;
+}
+.destination button:hover {
+  background-color: #02775c;
+}
+.destination p {
+  text-align: center;
+  margin: 18px;
+}
+#avis {
+  display: flex;
+  flex-direction: column;
+  background-color: #ededed;
+}
+.avis {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+.avis img {
+  width: 200px;
+  border-radius: 50%;
+}
+.profil {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.avis p {
+  width: 60%;
+  text-align: center;
+}
+.avis h3 {
+  font-size: 25px;
+  font-weight: bold;
+}
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 33px;
+}
+#contact p,
+#detail p {
+  width: 80%;
+  text-align: justify;
+}
+#contact form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  gap: 20px;
+}
+#contact > form > input {
+  height: 50px;
+  border: solid 1px rgb(173, 173, 173);
+  padding: 10px;
+}
+#contact > form > textarea {
+  height: 200px;
+  border: solid 1px rgb(173, 173, 173);
+  padding: 10px;
+}
+#contact > form > button {
+  margin: 30px 0 30px 0;
+  border: solid 1px rgb(173, 173, 173);
+  width: 20%;
+  height: 50px;
+  border: none;
+  background-color: #015e49;
+  color: white;
+  cursor: pointer;
+}
+#detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+.jour {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+  border: solid black 1px;
+  gap: 58px;
+  padding: 30px;
+}
+.jour h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
